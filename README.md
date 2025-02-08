@@ -90,7 +90,6 @@ src/
 
 - Shows list of previous conversions
 - Manages selection and retrieval of historical conversions
-- Implements infinite scroll for large history lists
 
 ## Services
 
@@ -98,7 +97,6 @@ src/
 
 - Handles communication with the PDF conversion backend
 - Implements error handling and retry logic
-- Manages API authentication
 
 ### IndexedDB Service
 
@@ -136,18 +134,3 @@ Body: {
 }
 Response: Blob (PDF file)
 ```
-
-## Security Considerations
-
-- API keys are stored securely in environment variables
-- Input validation is implemented for all user inputs
-- CORS policies are enforced for API requests
-- Secure URL handling for PDF blob URLs
-
-## Performance Optimization
-
-- Lazy loading of PDF viewer component
-- Efficient IndexedDB queries
-- Proper cleanup of blob URLs
-- Memoization of callback functions
-- Optimized re-renders using React hooks
